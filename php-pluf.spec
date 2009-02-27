@@ -1,6 +1,6 @@
 %define name    php-pluf
 %define version 0.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:    PHP WebApp Framework
 Name:       %{name}
@@ -11,8 +11,7 @@ Group:      Development/PHP
 Url:        http://www.pluf.org/
 Source0:    http://projects.ceondo.com/p/pluf/source/download/master/pluf-master.zip
 Requires(pre):  rpm-helper   
-Requires:       mod_php >= 2.0.54
-Requires:       pear(Mail/mime)
+Requires:       mod_php
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 
@@ -41,8 +40,6 @@ rm %{buildroot}%{_datadir}/%{name}/makepot.sh
 # remove .htaccess files
 find %{buildroot}%{_datadir}/%{name} -name .htaccess -exec rm -f {} \;
 
-%clean
-rm -rf %buildroot
 
 %files
 %defattr(0644,root,root,0755)
