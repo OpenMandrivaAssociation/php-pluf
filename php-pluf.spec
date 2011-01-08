@@ -1,6 +1,6 @@
 %define name    php-pluf
 %define version 0.1
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary:    PHP WebApp Framework
 Name:       %{name}
