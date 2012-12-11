@@ -47,3 +47,27 @@ find %{buildroot}%{_datadir}/%{name} -name .htaccess -exec rm -f {} \;
 %{_datadir}/%{name}
 
 
+
+
+%changelog
+* Fri May 27 2011 Oden Eriksson <oeriksson@mandriva.com> 0.1-5mdv2011.0
++ Revision: 679624
+- mass rebuild
+
+* Sat Jan 08 2011 Oden Eriksson <oeriksson@mandriva.com> 0.1-4mdv2011.0
++ Revision: 629851
+- rebuilt for php-5.3.5
+
+* Sun Jul 19 2009 Raphaël Gertz <rapsys@mandriva.org> 0.1-3mdv2010.0
++ Revision: 397580
+- Rebuild
+
+* Fri Feb 27 2009 Jerome Martin <jmartin@mandriva.org> 0.1-2mdv2009.1
++ Revision: 345559
+- Fixed requires
+
+* Fri Feb 27 2009 Jerome Martin <jmartin@mandriva.org> 0.1-1mdv2009.1
++ Revision: 345410
+- import php-pluf
+
+
