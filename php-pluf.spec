@@ -4,8 +4,8 @@
 
 Summary:    PHP WebApp Framework
 Name:       %{name}
-Version:    %{version}
-Release:    %{release}
+Version:    1.0
+Release:    1
 License:    GPLv2
 Group:      Development/PHP
 Url:        http://www.pluf.org/
@@ -13,7 +13,6 @@ Source0:    http://projects.ceondo.com/p/pluf/source/download/master/pluf-master
 Requires(pre):  rpm-helper   
 Requires:       mod_php
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Simple, elegant and easy for people used to Django but in PHP5 so easy
@@ -26,7 +25,6 @@ to deploy all over the world.
 
 
 %install
-rm -rf %buildroot
 %__install -d -m 755 %{buildroot}%_defaultdocdir/%{name}
 %__install -m 755 COPYING CONTRIBUTORS 
 cp -aRf apps %{buildroot}%_defaultdocdir/%{name}
@@ -69,5 +67,6 @@ find %{buildroot}%{_datadir}/%{name} -name .htaccess -exec rm -f {} \;
 * Fri Feb 27 2009 Jerome Martin <jmartin@mandriva.org> 0.1-1mdv2009.1
 + Revision: 345410
 - import php-pluf
+
 
 
