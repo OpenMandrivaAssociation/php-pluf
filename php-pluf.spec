@@ -1,11 +1,11 @@
 %define name    php-pluf
 %define version 0.1
-%define release %mkrel 5
+%define release 6
 
 Summary:    PHP WebApp Framework
 Name:       %{name}
 Version:    1.0
-Release:    1
+Release:    2
 License:    GPLv2
 Group:      Development/PHP
 Url:        http://www.pluf.org/
