@@ -8,7 +8,7 @@ Version:    1.0
 Release:    2
 License:    GPLv2
 Group:      Development/PHP
-Url:        http://www.pluf.org/
+Url:        https://www.pluf.org/
 Source0:    http://projects.ceondo.com/p/pluf/source/download/master/pluf-master.zip
 Requires(pre):  rpm-helper   
 Requires:       mod_php
